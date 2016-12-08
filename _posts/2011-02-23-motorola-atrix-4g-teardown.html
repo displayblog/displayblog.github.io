@@ -1,0 +1,27 @@
+---
+layout: post
+status: publish
+published: true
+title: Motorola Atrix 4G Teardown
+author:
+  display_name: ''
+  login: ''
+  email: ''
+  url: ''
+wordpress_id: 18176
+wordpress_url: http://www.displayblog.com/?p=18176
+date: '2011-02-23 16:19:12 -0800'
+date_gmt: '2011-02-24 00:19:12 -0800'
+categories: []
+tags: []
+comments: []
+---
+<p><a href="http://www.ifixit.com/Teardown/Motorola-Atrix-4G-Teardown/4964/1">iFixit</a> took the Motorola Atrix 4G and tore it down. And what did the good folks at iFixit find? Naturally, I'm mostly interested in the display. Once iFixit got to the LCD it was easy to take out. The 4-inch TFT LCD was not optically bonded to the cover glass. Which could mean you'll eventually be dealing with dust that get in between the LCD and the cover glass. The LCD and cover glass are easier to replace, but it might not really be: few have access to a clean room.</p>
+<p>Also, I just found out yesterday, thanks to Joel Pollack, Executive VP at Nouvoyance Inc., that the TFT LCD in the Atrix 4G makes use of the company's PenTile RGBW sub-pixel technology. PenTile RGBW is unique in that the Red, Green, Blue, and White sub-pixels are structured in a 2x2 matrix.</p>
+<p><img src="/wp-content/uploads/2011/02/nouvoyance_pentile_rgbw.jpg"  width="297" class="aligncenter" /></p>
+<p>There are many benefits to a RGBW sub-pixel structure. In <a href="http://www.displayblog.com/2010/12/20/3m-acer-all-day-computing-and-then-some/"><em>3M + Acer = All Day Computing And Then Some</em></a> I detailed how scarce light is: only 3% of the light from the backlight comes out of the front of the display. There are many culprits that absorb light. One is the RGB color filter that absorbs 70% of light that passes through it. The PenTile RGBW structure adds a white sub-pixel that is clear and with no color filter material. This improves light transmittance, about twice that of a typical RGB LCD, leading to a brighter display. I would assume it could also lead to significant power savings, an important consideration when it comes to power-hungry smartphones like the Motorola Atrix 4G.</p>
+<p>There are other differences, too. A typical LCD uses a RGB stripe sub-pixel structure and counts the trio as a pixel. On the PenTile RGBW, each pixel is composed of two sub-pixels. According to <a href="http://www.nouvoyance.com/technology.html">Nouvoyance</a>:</p>
+<blockquote><p>Images on a PenTile RGBW panel are subpixel rendered, meaning they are drawn at the subpixel level (the individual points of light), rather than to the whole pixels of an RGB stripe display. In fact "pixels" in the traditional sense have been eliminated in PenTile RGBW displays; individual subpixels are not restricted to use in one pixel group, but instead participate in multiple "logical" pixels in their surrounding vicinity.</blockquote></p>
+<p>The Motorola Atrix 4G is stated as having a pixel format of 960x540 <em>based</em> on the definition of a single pixel having two sub-pixels. Now there is definitely some magic going on in the background that probably makes the PenTile RGBW LCD in the Motorola Atrix 4G look as good as a RGB stripe-based LCD with 960x540. A 4-inch RGB LCD with a 960x540 pixel format doesn't exist, so an apples-to-apples comparison is not possible, but my gut feeling is that if there <em>was</em> a 4-inch RGB LCD with 960x540 pixels that it would be a bit sharper. In <a href="/2011/02/14/motorola-atrix-4g-review/"><em>Motorola Atrix 4G Review</em></a> I mention that the 4-inch LCD has a resolution of 275PPI, but now I need to add that the calculation is based on Nouvoyance's definition of a pixel for the PenTile RGBW.</p>
+<p>Just as a mental exercise, if we define a pixel as having three sub-pixels then the 4-inch PenTile RGBW Motorola Atrix 4G would result in a pixel format of just 640x360. The resolution, based on this definition of pixel and the new pixel format, would also be a bit less at about 184PPI. Still very high, but far from 275PPI.</p>
+<p>It's not easy to do a 1:1 pixel comparison since the very definition of pixel is different. The typical method of using RGB sub-pixels is being challenged: Nouvoyance is pioneering a vastly different way to show texts and images on displays with many benefits. An accurate comparison between normal and new might not be possible and it may not even be meaningful. What <em>will</em> be meaningful is how users respond to the 4-inch PenTile RGBW LCD used in the Motorola Atrix 4G, especially when they compare it to its arch-competitor: the 3.5-inch Retina Display with 960x640 RGB pixels in the iPhone 4.</p>

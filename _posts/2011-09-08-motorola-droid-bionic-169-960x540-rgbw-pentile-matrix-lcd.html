@@ -1,0 +1,34 @@
+---
+layout: post
+status: publish
+published: true
+title: 'Motorola Droid Bionic: 16:9 960x540 RGBW PenTile Matrix LCD'
+author:
+  display_name: ''
+  login: ''
+  email: ''
+  url: ''
+wordpress_id: 22836
+wordpress_url: http://www.displayblog.com/?p=22836
+date: '2011-09-08 14:31:47 -0700'
+date_gmt: '2011-09-08 21:31:47 -0700'
+categories: []
+tags: []
+comments: []
+---
+<p><a href="http://img.ibtimes.com/www/articles/20110904/208282_apple-iphone-5-motorola-droid-bionic.htm">Elias Samuel</a>, International Business Times:</p>
+<blockquote><p>Motorola's Droid Bionic uses a qHD (540 x 960 pixels, 256 ppi pixel density) TFT display for its 4.3-inch screen. qHD is a display resolution of 960&Atilde;&mdash;540 pixels which is exactly one quarter of a full HD 1080p and three quarters of a 720p frame, in a 16:9 aspect ratio. Droid Bionic&acirc;&euro;&trade;s screen fits the same 16:9 ratio as your HD TV which, in conjunction with that extra inch or so, and makes film and TV viewing a far more natural fit. Full HD resolution (1920 x 1080) looks good on 40-inch LCD TV, but here we are talking about a quarter of the full HD resolution (i.e. 540 x 960) which perfectly fits the 4.3-inch screen and is more than enough to get that HD effect.</blockquote></p>
+<p>The resolution of the 4.3-inch 960x540 LCD used in the Motorola Droid Bionic cannot be calculated at 256 ppi. The reason being each pixel is different. Each pixel on the Droid Bionic is made up of a RGBW sub-pixel structure arranged in a 2x2 format. If you count the pixels you won't find 256 of them in a diagonal inch. On the other hand, the 3.5-inch 960x640 Retina Display used in the Apple iPhone 4 has a RGB-stripe sub-pixel structure good for a resolution of 326 ppi. Look through a microscope and you'll find 326 pixels in each diagonal inch.</p>
+<p>Here's how you calculate ppi. First, the number of pixels on the diagonal pane needs to be calculated:</p>
+<pre>Diagonal Pixels = Square Root ( Horizontal Pixels Squared + Vertical Pixels Squared)</pre></p>
+<p>In the case of the 3.5-inch 960x640 Retina Display in the iPhone 4 this becomes:</p>
+<pre>1153.78 = &radic;(921,600 + 409,600)</pre></p>
+<p>And then to get ppi:</p>
+<pre>Pixels Per Inch = Diagonal Pixels / Diagonal Length</pre></p>
+<p>Which would put the Retina Display's ppi at:</p>
+<pre>329.65 = 1153.78 / 3.5</pre></p>
+<p>The actual size of the iPhone 4 Retina Display is a slightly larger 3.54 inches if Apple's stated ppi of 326 is accurate. This calculation can be done because we assume that each hardware pixel equals a pixel we see. This isn't the case with a RGBW PenTile Matrix pixel.</p>
+<p>Each RGBW hardware pixel doesn't translate into a pixel we see on a PenTile Matrix display. Nouvoyance has decoupled hardware pixel from addressed pixel. In other words, a pixel we see on a RGBW PenTile Matrix display can be made up of any combination of those sub-pixels, sometimes using all four and at other times using just two. For instance, when a RGBW PenTile Matrix display is showing a pattern of black and white lines only two sub-pixels are used.</p>
+<p>Because the standard method of determining resolution depends on whether or not these black and white lines can be distinguished from one another Nouvoyance rightly claims that its 4.3-inch RGBW PenTile Matrix LCD has a pixel format of 960x540 resulting in a resolution of 256 ppi.</p>
+<p>There is just one problem. We experience a difference: images or text on a RGBW PenTile Matrix display look different than on a display with RGB-strip sub-pixels with an equivalent ppi. Just read the initial wave of <a href="/2011/09/07/motorola-droid-bionic/">reviews for the Motorola Droid Bionic</a>.</p>
+<p>The next point I'd like to make focuses on the aspect ratio. A 16:9 aspect ratio on a smartphone is great when you want to watch video in that same aspect ratio. Most HD content created for TV has a 16:9 aspect ratio, but very few feature films do. Still 16:9 is better, not perfect, for feature films than a more squarish 3:2 aspect ratio you find on the iPhone 4. For everything else, I propose that a less wide display is better in <a href="/2010/07/02/ipad-2-0-a-more-perfect-ipad/"><em>iPad 2.0: A More Perfect iPad</em></a>. The article looks at the iPad in particular but the general conclusion can be applied to smartphones.</p>

@@ -1,0 +1,25 @@
+---
+layout: post
+status: publish
+published: true
+title: Resolution Independence
+author:
+  display_name: ''
+  login: ''
+  email: ''
+  url: ''
+wordpress_id: 10360
+wordpress_url: http://www.displayblog.com/?p=10360
+date: '2010-04-19 16:55:15 -0700'
+date_gmt: '2010-04-20 00:55:15 -0700'
+categories: []
+tags: []
+comments: []
+---
+<p>Apple is finally getting serious about resolution independence on displays. In the Mac OS X Reference Library there is reference titled <em><a href="http://developer.apple.com/mac/library/documentation/UserExperience/Conceptual/HiDPIOverview/HiDPIConcepts/HiDPIConcepts.html#//apple_ref/doc/uid/TP40003409-CH3-SW4">Resolution Independence Guidelines</a></em>:</p>
+<blockquote><p>Resolution independence allows greater flexibility with high-density displays by allowing a Quartz point to map to any number of pixels (or fractions thereof). You can no longer assume a 1:1 correspondence between a Quartz point and an onscreen pixel...</blockquote><br />
+Many years ago a typical LCD sported a resolution of about 72 PPI. A Quartz point had a scale of about 72 units per inch and one Quartz point mapped to about one pixel. Not any more:</p>
+<blockquote><p>One a 144 dpi screen, a 200 x 200 image is one quarter the size of a comparable image on a 72 dpi screen.</blockquote><br />
+Of course in displays we typically use <em>pixels</em> per inch or PPI. But the point here is that developers cannot assume a 1:1 ratio between a point and an onscreen pixel. Apple is introducing The Scale Factor, which is a new parameter that determine the ratio between a point and an onscreen pixel. At the moment a scale factor of 1.0 corresponds to 72 PPI. A display with 144 PPI will result in a scale factor of 2.0. Look at the example below. The physical font size stays the same between the two displays but with the higher resolution 108 PPI display with a 1.5 scaling factor the font is made up of more pixels and is <em>much</em> smoother.</p>
+<p style="text-align: center;"><a href="http://www.displayblog.com/wp-content/uploads/2010/04/Resolution_Independence_Smoother_Fonts1.jpg"><img class="size-full wp-image-10362 aligncenter" title="Resolution_Independence_Smoother_Fonts" src="http://www.displayblog.com/wp-content/uploads/2010/04/Resolution_Independence_Smoother_Fonts1.jpg" alt="" width="512" height="576" /></a></p><br />
+I'm very excited that Apple is moving toward resolution independence with its developers. This will in turn make higher resolution displays eminently more valuable. <em>via</em> <a href="http://daringfireball.net/linked/2010/04/19/mac-os-x-resolution-independence">Daring Fireball</a></p>

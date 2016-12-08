@@ -1,0 +1,26 @@
+---
+layout: post
+status: publish
+published: true
+title: the_date
+author:
+  display_name: ''
+  login: ''
+  email: ''
+  url: ''
+wordpress_id: 23805
+wordpress_url: http://www.displayblog.com/?p=23805
+date: '2012-01-07 17:03:25 -0800'
+date_gmt: '2012-01-08 01:03:25 -0800'
+categories: []
+tags: []
+comments: []
+---
+<p>Design tweaks continue at DisplayBlog. For some time I've been thinking the date underneath the title of each post was repetitive especially if it was the same. It worked well as a quick visual indicator, but I felt the overall experience could be decluttered just a bit. I've spent considerable time searching online for a simple solution and today I got lucky. The solution was on <a href="http://codex.wordpress.org/Function_Reference/the_date">WordPress.org</a>:</p>
+<blockquote><p>When there are multiple posts on a page published under the SAME DAY, the_date() only displays the date for the first post (that is, the first instance of the_date()).</blockquote></p>
+<p>This is exactly what I was looking for. The code on DisplayBlog is concise:</p>
+<pre>< ?php the_date('M d, Y'); ?></pre></p>
+<p>This went inside the main loop. I put it before the title and styled it to match the general look of the search form. The width of the #ddd background is the same, but by changing the font color to white the date is a little less conspicuous. It was a tricky thing. I didn't want the date to jump out, but I also wanted it to be easily found if you were looking for it.</p>
+<p>A side benefit I wasn't expecting is the date shows up at the top of every page. This happens because the first post is the first instance of that date on that page. I was pleasantly surprised.</p>
+<p>Another small adjustment was to the previous and next indicators toward the bottom. Before I used &larr; and &rarr;. There was nothing particularly wrong with them, but every time I looked at them the dual horizontal lines (from the link underline) made me think there must be something a bit better. I wanted to make them look like the repeat and forward buttons that are commonly used on audio devices. For no particular reason really. So I decided to use &lsaquo; and &rsaquo; instead. Two of them each. I think they look okay, better then the arrows.</p>
+<p>The goal was to tweak the overall visual experience to clean it up just a bit and I think I've managed to do that without messing up anything. I hope you'll agree. Thank you so much for reading, and enjoy.</p>

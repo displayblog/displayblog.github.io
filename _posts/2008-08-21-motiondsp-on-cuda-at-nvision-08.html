@@ -1,0 +1,40 @@
+---
+layout: post
+status: publish
+published: true
+title: MotionDSP on CUDA at NVISION 08
+author:
+  display_name: ''
+  login: ''
+  email: ''
+  url: ''
+excerpt: "Tired of crappy video from your mobile phone or digital camera? <a href=\"http://www.motiondsp.com/home\">MotionDSP</a>
+  has got a solution for you.\r\n<p style=\"text-align: center;\"><img class=\"aligncenter\"
+  src=\"http://www.displayblog.com/wp-content/uploads/2008/08/motiondsp.jpg\"
+  alt=\"MotionDSP\" /></p>\r\n\r\nToday, I spoke with <a href=\"http://www.linkedin.com/in/varah\">Dr.
+  Sean Varah</a>, CEO of MotionDSP, about the technology behind the company's
+  FixMyMovie (www.fixmymovie.com) service. First, what is FixMyMovie? MotionDSP's
+  FixMyMovie service \"automatically cleans your movies with MotionDSP's advanced
+  video technology.\" You upload a crappy movie and FixMyMovie fixes your movie. You
+  can embedded the enhanced video online or download to your PC for a small fee. So,
+  what makes MotionDSP's technology better than the others? According to Dr. Varah,
+  the engine behind the service has been used by the military and the police to enhance
+  videos, security videos to be more precise, and have helped in catching some really
+  bad people. Now MotionDSP wants to bring its advanced algorithm to the CE market
+  for all of us to enjoy better videos. "
+wordpress_id: 2353
+wordpress_url: http://www.displayblog.com/?p=2353
+date: '2008-08-21 23:20:18 -0700'
+date_gmt: '2008-08-22 06:20:18 -0700'
+categories: []
+tags: []
+comments: []
+---
+<p>Tired of crappy video from your mobile phone or digital camera? <a href="http://www.motiondsp.com/home">MotionDSP</a> has got a solution for you.</p>
+<p style="text-align: center;"><img class="aligncenter" src="http://www.displayblog.com/wp-content/uploads/2008/08/motiondsp.jpg" alt="MotionDSP" /></p></p>
+<p>Today, I spoke with <a href="http://www.linkedin.com/in/varah">Dr. Sean Varah</a>, CEO of MotionDSP, about the technology behind the company's FixMyMovie (www.fixmymovie.com) service. First, what is FixMyMovie? MotionDSP's FixMyMovie service "automatically cleans your movies with MotionDSP's advanced video technology." You upload a crappy movie and FixMyMovie fixes your movie. You can embedded the enhanced video online or download to your PC for a small fee. So, what makes MotionDSP's technology better than the others? According to Dr. Varah, the engine behind the service has been used by the military and the police to enhance videos, security videos to be more precise, and have helped in catching some really bad people. Now MotionDSP wants to bring its advanced algorithm to the CE market for all of us to enjoy better videos. <a id="more"></a><a id="more-2353"></a></p>
+<p>One of the most common improvements that is made to a video source is to deinterlace it, if it is interlaced. The deinterlacer looks at two frames and determines if there is motion. If there is motion, the deinterlacer throws out one field and uses the other field to create a progressively scanned motion picture. If there is no motion, the two fields are fuzed. After deinterlacing a video source, if needed, it is upscaled. The upscaling is based on simple (or complex depending on your level) mathematics.</p>
+<p>MotionDSP's algorithm is a lot more complex than that and looks at a massive dataset. How massive? The algorithm looks at five to 30 frames simultaneously and compares them. All of the frames are mapped out and merged into a single frame, a frame has a lot more information that can lead to improved resolution and luminance that can lead to better contrast. This algorithm results in excellent picture quality but requires some hefty computing power. For instance, using a high-end quad core CPU, optimizing a 1 minute 320 x 240 YouTube video and upconverting it to 640 x 480 takes about 4 - 6 minutes. You can process smaller videos created by mobile phones on a fast notebook PC. HD video? You'll need something much more powerful. You can find examples of YouTube videos that have been enhanced <a href="http://www.fixmymovie.com/example/">here</a>. And from video you can generate some impressive still images too. Click the button on the bottom right 'Compare' to see the old and the new:</p>
+<p><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="480" height="364" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="id" value="mymovie" /><param name="name" value="mymovie" /><param name="flashvars" value="read_xml_from=http://www.fixmymovie.com/embed/movie/x7yBjL/" /><param name="src" value="http://www.fixmymovie.com/adds/playerx.swf" /><param name="wmode" value="transparent" /><embed id="mymovie" type="application/x-shockwave-flash" width="480" height="364" src="http://www.fixmymovie.com/adds/playerx.swf" wmode="transparent" flashvars="read_xml_from=http://www.fixmymovie.com/embed/movie/x7yBjL/" name="mymovie"></embed></object></p>
+<p>MotionDSP will be showcasing its algorithm that has been ported to work with NVIDIA's CUDA platform at <a href="http://www.nvision2008.com/">NVISION 08</a>, a visual conference that will be held at the San Jose Convention Center from August 25 to 27. NVIDIA's CUDA technology is a C language environment that enables the development of programs to make use of NVIDIA's GPUs, which have multiple cores. With the two combined, video enhancement can be done in faster-than real time. For instance, a 10 minute YouTube video can be processed in less than 10 minutes. The faster-than-real time video processing will be shown during the NVISION 08 conference.</p>
+<p>[tags]Motion DSP, FixMyMovie, NVIDIA, CUDA, Deinterlace, Upconvert[/tags]</p>

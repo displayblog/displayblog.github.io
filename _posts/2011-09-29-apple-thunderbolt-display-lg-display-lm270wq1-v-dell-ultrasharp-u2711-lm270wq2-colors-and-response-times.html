@@ -1,0 +1,33 @@
+---
+layout: post
+status: publish
+published: true
+title: 'Apple Thunderbolt Display (LG Display LM270WQ1) v. Dell UltraSharp U2711 (LM270WQ2):
+  Colors And Response Times'
+author:
+  display_name: ''
+  login: ''
+  email: ''
+  url: ''
+wordpress_id: 22994
+wordpress_url: http://www.displayblog.com/?p=22994
+date: '2011-09-29 11:12:31 -0700'
+date_gmt: '2011-09-29 18:12:31 -0700'
+categories: []
+tags: []
+comments: []
+---
+<p><a href="http://www.ifixit.com/Teardown/Apple-Thunderbolt-Display-Teardown/6525/1">iFixit</a> tore down the Apple Thunderbolt Display and found many interesting components including the 27-inch LCD with model number LM270WQ1 manufactured by LG Display.</p>
+<p>LM stands for LCD and Monitor. 270 represents 27.0 inches. WQ refers to WQXGA, which unfortunately can be confusing because it can be either 2560x1600 or 2560x1440. In the case of the Apple Thunderbolt Display it's the later. The number 1 at the end probably indicates the version number.</p>
+<ul>
+<li>Colors: 16.7 million</li>
+<li>Response Time: 12 ms</li><br />
+</ul></p>
+<p>iFixit focused on these two specifications for the LM270WQ1 LCD panel and compared them to the Dell UltraSharp U2711. The <a href="http://www.displayblog.com/2010/02/10/dell-ultrasharp-u2711/">U2711 specifications</a> show a response time of 6 ms and 1.07 billion colors. The difference:</p>
+<blockquote><p>We might be splitting hairs here, but those hairs would be viewed with 1,053,300,000 less colors on Apple's display. Just saying.</blockquote></p>
+<p>Let's split them hairs. The U2711 uses the LG Display LM270WQ2. Contrary to what I've written in the second paragraph, the last digit turns out to be not just a version number but an indication of completely different models. The LM270WQ2 is a 10-bit H-IPS LCD panel. That's 10 bits to each sub-pixel so there are 1024 shades of red, green, and blue. Do the math (1024x1024x1024) and you get 1.07 billion colors. But there is the possibility that the LM270WQ2 is merely an 8-bit + AFRC panel or 8-bit plus dithering to make it look like you get 16.7 million and then some.</p>
+<p>Unfortunately LG Display doesn't make things any clearer on its <a href="http://www.google.com/url?sa=t&rct=j&q=lm270wq2&source=web&cd=1&ved=0CBoQFjAA&url=http%3A%2F%2Flcdtech.no-ip.info%2Fdownload%2Fspecs%2FLG%2520Display%2FLM270WQ2%2520(SL)(A1).pdf&ei=Y6uEToHqG-HliAK4odm-DA&usg=AFQjCNGdsyIQpiOhEEsp9B6MecfrtfTKPg">LM270WQ2 preliminary specification sheet (PDF)</a> identifying the color depth as, "1.07 Billion colors, 10Bit with A-FRC". A 10-bit + A-FRC LCD panel would act similarly to a 12-bit LCD with the total possible colors reaching 68.7 billion (4096x4096x4096). That can't be it. I'm not certain what bit the LM270WQ2 is, but if I had to guess it'd be 8-bit + A-FRC to make it work like a 10-bit LCD panel. So the difference in color depth between the Apple Thunderbolt Display and the Dell UltraSharp U2711 is A-FRC, a fancy word for dithering. Besides to get 10-bit color working properly, you'll need more than just a 10-bit LCD. Check out <a href="http://www.tftcentral.co.uk/news_archive/19.htm#10-bit_ips">TFT Central's explanation for what is required for 10-bit color</a>.</p>
+<p>The typical Grey to Grey (GTG) response time for the U2711 is 6 ms. On the Apple Thunderbolt Display the response time specification is simply stated as 12 ms. So I found the <a href="http://www.google.com/url?sa=t&rct=j&q=lm270wq1&source=web&cd=4&sqi=2&ved=0CDcQFjAD&url=http%3A%2F%2Flcdtech.no-ip.info%2Fdownload%2Fspecs%2FLG%2520Display%2FLM270WQ1%2520(SD)(A2).pdf&ei=FayETu6BDavKiALQ47zNDA&usg=AFQjCNEckgbQR1SMKkpMDJPNNQ1oHLIRTQ">LM270WQ1 LCD final specification sheet (PDF)</a> and the typical rise time was 6.5 ms and decay time was 7.5 ms for an on/off response time totaling 14 ms. Maximum rise and decay times were both 14 ms. But this is on/off response times, not GTG. Unfortunately there are no GTG response times indicated in the LM270WQ1 production specification sheet, but on the other hand there <em>are</em> on/off response times for the LM270WQ2. So let's compare on/off response times. On the LM270WQ2 used in the Dell U2711 the typical rise time is 5.5 ms and decay time is 6.5 ms with 12 ms as a maximum. So to compare apples to apples the U2711 has an on/off response time of 12 ms. Not that much better than the 14 ms response time of the Apple Thunderbolt Display.</p>
+<p>To conclude, the Apple Thunderbolt Display uses the LG Display LM270WQ1 LCD panel and the Dell UltraSharp U2711 uses a different LM270WQ2. Comparing apples to oranges can get you into trouble and that's exactly what iFixit did:</p>
+<blockquote><p>The 27-inch (diagonal) TFT active-matrix LCD has a resolution of 2560 by 1440 pixels, the standard for displays of this size and price. Its 12 ms response time and 16.7 million colors, however, fall short of the 6 ms response time and 1.07 billion colors of Dell's comparable display.</blockquote></p>
+<p>Both are fantastic displays, but the difference between the two are not as large as iFixit might have you think. The U2711's LM270WQ2 panel sports an 8-bit + A-FRC while the Thunderbolt Display's LM270WQ1 is an 8-bit LCD. The difference being the dithering. The response times, when looking at on/off, are 12 ms and 14 ms with the slight advantage going to the Dell UltraSharp U2711.</p>

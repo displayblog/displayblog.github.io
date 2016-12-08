@@ -1,0 +1,33 @@
+---
+layout: post
+status: publish
+published: true
+title: 'Galaxy Nexus: 316-Hole Mask &ne; 316 ppi'
+author:
+  display_name: ''
+  login: ''
+  email: ''
+  url: ''
+wordpress_id: 23474
+wordpress_url: http://www.displayblog.com/?p=23474
+date: '2011-12-04 15:13:58 -0800'
+date_gmt: '2011-12-04 23:13:58 -0800'
+categories: []
+tags: []
+comments: []
+---
+<p>Steve Jobs set the bar for smartphone resolution at 300 ppi with the iPhone 4. The Retina Display-branded 326-ppi 3.5-inch 960x640 IPS LCDs are mostly manufactured by LG Display (LGD). In July LGD President Kwon Young-soo snubbed Samsung:</p>
+<blockquote><p>With existing technology, making AMOLED with 270 ppi in the coming years is impossible.</blockquote></p>
+<p>Samsung is the largest manufacturer of OLED displays and has been tirelessly advancing its Super AMOLED display technology used in its popular Galaxy S smartphones. A special 10-member team called Dalli was formed by Samsung to take on the challenge of achieving 300-ppi OLED mobile displays. The problem described in <a href="http://english.donga.com/srv/service.php3?bicode=020000&biid=2011120285558">The Dong-A Ilbo</a>:</p>
+<blockquote><p>AMOLED is made by attaching a thin plate with holes called a mask on a glass plate and putting a light-emitting material that produce colors into the holes. [...]</p>
+<p>If the mask was thick, however, the light-emitting material was not smeared with the glass plate because of difficulty passing through holes. If the mask was too thin, the glass plate got bent when many holes were made. In addition, if the mask failed to adhere to the glass plate well, colors were mixed.</blockquote></p>
+<p>The Dalli team's solution:</p>
+<blockquote><p>By completely sticking the mask on the glass plate, they pierced more than 300 holes.</p>
+<p>This led to the development of a 4.65-inch, 1280&Atilde;&mdash;720 HD super AMOLED screen used for the Galaxy Nexus by making 316 pixels per inch.</blockquote></p>
+<p>The 4.65-inch HD Super AMOLED makes use of PenTile Matrix sub-pixels. PenTile Matrix is quite an innovative approach to solving many limitations of OLED: shorter lifetime of blue, differential aging, power consumption, resolution limitations, etc. Unlike RGB stripe displays where a pixel is always composed of red, green, blue sub-pixels in a 3x1 arrangement, a pixel on a PenTile Matrix display is not a physical pixel. Pixels are 'logical' and can be composed of either two (2x1) or four (2x2) sub-pixels.</p>
+<p>The pixel format on a PenTile Matrix display must be calculated from different assumptions based on the sub-pixel format. When we see the hardware specification of 1280x720 what we are implicitly assuming is 1280x720 with RGB sub-pixels arranged in a 3x1 format because that's what make up our visual experience on most smartphones. But 1280x720 on a PenTile Matrix display is something quite different.</p>
+<p>The Dong-A Ilbo article mentions the Dalli team piercing more than 300 holes in an inch. These holes are <em>sub-pixels</em>. A 4.65-inch display with a 16:9 aspect ratio has a physical dimension of 4.05x2.28 inches. Assuming exactly 316 holes per inch, the number of horizontal sub-pixels is 1280. Vertical sub-pixels number 720.</p>
+<p>The resulting <em>pixel</em> format assuming a pixel is made up of 2x1 (RG, BG, GR, or GB) sub-pixels is 640x720. You get 640 horizontal pixels when each pixel requires two sub-pixels. When 2x2 sub-pixels make up a pixel the pixel format then becomes 640x360. The actual pixel format a user experiences is be somewhere between 640x720 and 640x360. This is a far cry from 1280x720.</p>
+<p>Now we can calculate resolution in terms of ppi. At 640x720 the Galaxy Nexus sports a resolution of 207 ppi. And at 640x360 it is 158 ppi. Since rendered logical pixels can be composed of a combination of 2x1 and 2x2 sub-pixels you're experiencing a resolution between 158 and 207 ppi. This is considerably less than 316 ppi.</p>
+<p>In order to reach 316 ppi on a PenTile Matrix-based OLED display the number of holes in the mask will need to be 632 dots per inch based on the assumption a pixel is made up of 2x2 sub-pixels. For a pixel with 2x1 sub-pixels the mask will need 316 holes one way and 632 dots the other. Assuming a 50:50 split between pixels made up of 2x2 and 2x1 sub-pixels on a given rendered page, to reach a visual experience of an average of 316 ppi on a PenTile Matrix OLED display the number of holes in the mask will need to be 474.</p>
+<p>Maybe LGD President Kwon Young-soo will be proven right.</p>

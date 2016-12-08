@@ -1,0 +1,24 @@
+---
+layout: post
+status: publish
+published: true
+title: "&acirc;&euro;&oelig;The 64-bit Apple chip hit us in the gut.&acirc;&euro;\x9D"
+author:
+  display_name: ''
+  login: ''
+  email: ''
+  url: ''
+wordpress_id: 25298
+wordpress_url: http://www.displayblog.com/?p=25298
+date: '2013-12-17 21:49:33 -0800'
+date_gmt: '2013-12-18 05:49:33 -0800'
+categories: []
+tags: []
+comments: []
+---
+<p><em>via</em> <a href="http://daringfireball.net/linked/2013/12/16/lyons-qualcomm-64">John Gruber</a>. <a href="http://blog.hubspot.com/uattr/qualcomm-apple-64-bit-chip-hit-us-in-gut">Dan Lyons</a>:</p>
+<blockquote><p>&acirc;&euro;&oelig;The 64-bit Apple chip hit us in the gut,&acirc;&euro; says the Qualcomm employee. &acirc;&euro;&oelig;Not just us, but everyone, really. We were slack-jawed, and stunned, and unprepared. It&acirc;&euro;&trade;s not that big a performance difference right now, since most current software won&acirc;&euro;&trade;t benefit. But in <em>Spinal Tap</em> terms it&acirc;&euro;&trade;s like, 32 more, and now everyone wants it.&acirc;&euro;</blockquote></p>
+<p>The &acirc;&euro;&oelig;It's not that big a performance difference right now...&acirc;&euro; is inaccurate. <a href="https://mikeash.com/pyblog/friday-qa-2013-09-27-arm64-and-you.html">Mike Ash</a>, again <em>via</em> <a href="http://daringfireball.net/linked/2013/09/28/ash-64">John Gruber</a>, points to huge improvements in object creation and destruction speeds in 64-bit mode versus 32-bit mode:</p>
+<blockquote><p>Adding it all together, it&acirc;&euro;&trade;s a pretty big win. My casual benchmarking indicates that basic object creation and destruction takes about 380ns on a 5S running in 32-bit mode, while it&acirc;&euro;&trade;s only about 200ns when running in 64-bit mode. If any instance of the class has ever had a weak reference and an associated object set, the 32-bit time rises to about 480ns, while the 64-bit time remains around 200ns for any instances that were not themselves the target.</p>
+<p>In short, the improvements to Apple&acirc;&euro;&trade;s runtime make it so that object allocation in 64-bit mode costs only 40-50% of what it does in 32-bit mode. If your app creates and destroys a lot of objects, that&acirc;&euro;&trade;s a big deal.</blockquote></p>
+<p>I'm not a programmer, but I take this to mean iOS apps that take advantage of the A7 CPU's 64-bit architecture are faster, now.</p>

@@ -1,0 +1,32 @@
+---
+layout: post
+status: publish
+published: true
+title: ":Hover"
+author:
+  display_name: ''
+  login: ''
+  email: ''
+  url: ''
+wordpress_id: 22678
+wordpress_url: http://www.displayblog.com/?p=22678
+date: '2011-08-23 18:18:01 -0700'
+date_gmt: '2011-08-24 01:18:01 -0700'
+categories: []
+tags: []
+comments: []
+---
+<p><img src="http://www.displayblog.com/wp-content/uploads/2011/08/finger_pointer.jpg" alt="" title="finger_pointer" width="480" height="568" class="aligncenter size-full wp-image-22680" /></p>
+<p>This is how the mouse pointer looks like hovering over a clickable item like linked text. A normal mouse pointer automatically changes into this finger pointer. This user interface (UI) design seems to be universal and can be found in OS X, Microsoft Windows, many Linux distributions, etc.</p>
+<pre>a:hover</pre></p>
+<p>By using the CSS :hover selector you can manipulate text effects when the mouse pointer hovers over linked text. But.</p>
+<p>In pursuing a minimalist UI on DisplayBlog, I'm thinking, "Are additional visual hover transitions necessary?" Prior to today, I used:</p>
+<pre>-webkit-transition: ease-in-out;</pre></p>
+<p>When the mouse pointer hovered over linkable texts, the grey underline slowly transitioned to red, and back when the mouse pointer was no longer hovering. When I first discovered this transition, I thought it was <em>so</em> cool. But now I'm thinking: "Is it necessary?"</p>
+<p>OS UI designers have already thought of an effective method of showing visual cues to when the mouse pointer is hovering over clickable elements on webpages. From a minimalist point of view, why add an additional visual cue to an already universally understood and accepted user experience (UX)? There really is no reason of necessity.</p>
+<p>One concern I did have before pulling the plug on textual hover transitions was:</p>
+<blockquote><p>Will the mouse pointer transition be enough of a visual indication that you are now hovering over clickable text?</blockquote></p>
+<p>John Gruber's <a href="http://daringfireball.net/">Daring Fireball</a> uses a variation of:</p>
+<pre>a:hover { background-color: grey; color: lighter grey }</pre></p>
+<p>The transition on Daring Fireball changes the background color and brightens the text. Subtle but effective. Gruber has a minimalist sensibility when it comes to UI design, more so than many minimalism-touting websites. Most websites, like Daring Fireball, have unmistakable visual transitions when hovering over linked text. But is it necessary?</p>
+<p>I am putting forth the idea that it is not, within a minimalistic UI design approach. Once you get accustomed to more, less can be uncomfortable. Taking away that additional visual cue will force the reader to be more visually sensitive to the mouse cursor, but because we are peripherally but closely following the mouse cursor when we're moving it I don't foresee this will become a major UX issue. So, in the quest toward minimalism I've removed hover visual transitions from DisplayBlog.</p>

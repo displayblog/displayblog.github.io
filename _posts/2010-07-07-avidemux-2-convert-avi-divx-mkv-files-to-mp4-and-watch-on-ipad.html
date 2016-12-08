@@ -1,0 +1,24 @@
+---
+layout: post
+status: publish
+published: true
+title: 'Avidemux 2: Convert AVI, DivX, MKV Files To MP4 And Watch On iPad'
+author:
+  display_name: ''
+  login: ''
+  email: ''
+  url: ''
+wordpress_id: 11764
+wordpress_url: http://www.displayblog.com/?p=11764
+date: '2010-07-07 17:38:25 -0700'
+date_gmt: '2010-07-08 01:38:25 -0700'
+categories: []
+tags: []
+comments: []
+---
+<p>The iPad natively supports MP4 video playback, and that's it. If you have a lot of AVI, DivX or MKV files it will take a good part of your life to convert them to MP4. But there is a more efficient way. Not all, but a good many, videos are encoded in H.264, which is the codec that is compatible with iDevices. The AVI, DivX or MKV are just wrappers. Change the wrapper to MP4 and you're ready to rock with your iPad in no time. That's the idea behind <a href="http://fixounet.free.fr/avidemux/">Avidemux 2</a>.</p>
+<p><img class="size-full wp-image-11770 aligncenter" title="The_Book_Of_Eli_Avidemux_2_Green_Color_Pixelation" src="http://www.displayblog.com/wp-content/uploads/2010/07/The_Book_Of_Eli_Avidemux_2_Green_Color_Pixelation.jpg" alt="" width="480" /></p>
+<p>Avidemux can change the wrapper to AVI, MPEG, MP4, OGM, FLV and MKV. I'm no expert when it comes to this type of stuff but I randomly picked out an AVI file (<a href="http://www.amazon.com/gp/product/B002ZG997C?ie=UTF8&amp;tag=displ0f-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B002ZG997C">The Book of Eli</a><img style="border: none !important; margin: 0px !important;" src="http://www.assoc-amazon.com/e/ir?t=displ0f-20&amp;l=as2&amp;o=1&amp;a=B002ZG997C" border="0" alt="" width="1" height="1" />, Amazon affiliate link) and tested it. The file was about 736MB in size. The source video for this particular sample was encoded in Xvid. Avidemux wanted to build a VBR (Variable Bit Rate) time map to sync the video and audio; that took 50 seconds. A packed bitstream was detected so Avidemux wanted to unpack it and that took another 26 seconds. I then picked MP4 for format and AAC for audio and left video as copy. I then went up to the file menu, save, and then save video. Make sure to append the .MP4 to the file name. After just five minutes I had an MP4 version of the original AVI file. The video worked but it was far from perfect with pixelation that was barely watchable (see picture above). I thought it may have been due to poor GPU performance since I was running my MBP at maximum battery savings mode. I changed the setting to maximum performance, logged out and back in, ran the video again but the result was the same.</p>
+<p><img class="size-full wp-image-11767 aligncenter" title="The_Book_Of_Eli_Avidemux_2_Green_Color" src="http://www.displayblog.com/wp-content/uploads/2010/07/The_Book_Of_Eli_Avidemux_2_Green_Color.jpg" alt="" width="480" /></p>
+<p>So I redid the process with different settings. The AVI file was encoded in Xvid so instead of keeping the video as copy, I chose MPEG-4 ASP (Xvid). Avidemux unpacked the bitstream again and that took 26 seconds but the encoding portion now took a bit less than 22 minutes. This time the video quality was better and the video was quite watchable, but the video wasn't as smooth as the original AVI. There was a bit of pixelation and the color was a bit off; patches of green appeared surrounding some video elements. There might be other settings that could be modified to get better results but my initial thoughts regarding Avidemux isn't completely satisfying. I could also be doing something wrong. I am certain your experiences will vary. You might get better results with videos that are encoded in H.264, but I am not sure.</p>
+<p>Avidemux makes use of a more efficient method of changing video file formats. Instead of re-encoding the entire video Avidemux changes the wrapper. In some cases this can be done in just minutes but your results will vary. This test was conducted on a 2009 17-inch unibody MacBook Pro with a 2.8GHz CPU and 4GB of RAM.</p>

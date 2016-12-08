@@ -1,0 +1,31 @@
+---
+layout: post
+status: publish
+published: true
+title: Intel Ivy Bridge MFX Engine Supports 4K4K
+author:
+  display_name: ''
+  login: ''
+  email: ''
+  url: ''
+wordpress_id: 22919
+wordpress_url: http://www.displayblog.com/?p=22919
+date: '2011-09-19 14:32:22 -0700'
+date_gmt: '2011-09-19 21:32:22 -0700'
+categories: []
+tags: []
+comments: []
+---
+<p><a href="http://vr-zone.com/articles/post-idf-bites-ivy-bridge-gpu-to-support-4kx4k-displays-/13584.html">Nebojsa Novakovic</a>, VR-Zone.com:</p>
+<blockquote><p>Not only can the MFX engine display up to 4096 x 4096 pixels on a single monitor, but it can also handle video processing for 4K QuadHD video as well. [...]</blockquote></p>
+<p>The Intel Ivy Bridge chipset is scheduled to be released around March/April 2012. 4Kx4K would require a square display. That's not unusual since we already have square displays. The iPod nano for instance.</p>
+<p>Let's assume these conditions: frequency is 60Hz, which means that it updates content at 60 fps. Each pixel is made up of three red, green, blue sub-pixels. And each sub-pixel is 8 bit. 4K means 4096. So a 4Kx4K monitor would require a bandwidth of:</p>
+<pre>(8 bit x 3 sub-pixels) x (4096 x 4096) x 60 fps</pre></p>
+<p>The next step:</p>
+<pre>24 bit x 16,777,216 x 60 fps</pre></p>
+<p>We get 24,159,191,040 bits per second or 24.16 Gbps. The Ivy Bridge is an <em>integrated</em> graphics chipset.</p>
+<p>Is there an industry standard video interconnect that can handle 23 Gbps? According to <a href="http://www.vesa.org/displayport-developer/why-displayport/">VESA</a>, DisplayPort 1.2 has four micro-packet lanes good for 5.4 Gbps each for a total of 21.6 Gbps. So the fastest video interconnect of today can't handle a 4Kx4K square display. Well, what about a more reasonable 4K2K display?</p>
+<p>A 4K2K can mean a lot of things. Check out <a href="/2010/07/10/youtube-supports-4k2k-quad-hd/"><em>YouTube Supports 4K2K, Quad HD</em></a> for all the details. Let's pick a number and go with it. How about 3840x2160? Also known as Quad HD and more accurately Quad Full HD. The recently announced <a href="/2011/09/02/toshiba-55zl2/">Toshiba 55ZL2</a> sports this pixel format. The next pixel format beyond 1920x1080 looks to be 3840x2160. What would the minimum bandwidth requirement be for a display running at 60 Hz?</p>
+<pre>24 bit x (3840x2160) x 60 fps</pre></p>
+<p>11,943,936 bits per second or almost 12 Gbps. Double the frequency to 120 fps (or 120 Hz) and the total bandwidth is still within the capabilities of an Ivy Bridge chipset. The problem is DisplayPort will need to bump up its bandwidth threshold from 21.6 to 24 Gbps.</p>
+<p>The MFX engine in the upcoming Ivy Bridge integrated chipset can handle 24 Gbps, good for running a 3840x2160 display at 120Hz. Amazing.</p>

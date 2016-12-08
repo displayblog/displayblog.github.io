@@ -1,0 +1,50 @@
+---
+layout: post
+status: publish
+published: true
+title: Why Android Smartphones Are Bigger Than The iPhone
+author:
+  display_name: ''
+  login: ''
+  email: ''
+  url: ''
+wordpress_id: 23902
+wordpress_url: http://www.displayblog.com/?p=23902
+date: '2012-01-16 19:57:52 -0800'
+date_gmt: '2012-01-17 03:57:52 -0800'
+categories: []
+tags: []
+comments: []
+---
+<p>Google recently posted a design guide <a href="http://developer.android.com/design/style/devices-displays.html">Android Design</a>:</p>
+<blockquote><p>So where do you begin when designing for multiple screens? One approach is to work in the base standard (medium size, MDPI) and scale it up or down for the other buckets. Another approach is to start with the device with the largest screen size, and then scale down and figure out the UI compromises you'll need to make on smaller screens.</blockquote></p>
+<p>Directly from the horse's mouth: On Android UI compromises must be made. I understand compromises need to be made to optimize UI to a certain platform. The UI used on a conventional PC will not work very well on a smartphone and vice versa. But UI compromises should not exist <em>within</em> the same platform. Here Google clearly admits UI compromises are necessary when developing apps for Android. If Google wants to support multiple display sizes it should have developed a framework allowing for a consistent user experience across different displays. Obviously UX consistency was not Google's top priority. If it was there would have been and continue to be tremendous effort toward making Android resolution independent by moving to vector text and graphics that do not depend on ppi.</p>
+<p>There are four DPI levels (MDPI is baseline):</p>
+<ul>
+<li>LDPI: ~120DPI</li>
+<li>MDPI: ~160DPI</li>
+<li>HDPI: ~240DPI</li>
+<li>XHDPI: ~320DPI</li><br />
+</ul></p>
+<p>What this means is that when resolution increases from ~120 ppi (I prefer ppi when discussing pixel-based digital displays) to ~159 ppi fonts and icons will get smaller. This applies to all three levels of in-betweens. And displays north of ~320 ppi will continue to get smaller with no reprieve.</p>
+<p>When the 960x640 3.5-inch Retina Display was introduced with the iPhone 4, the rest of the smartphone industry had to do something about it. At the time most of the competition was at 800x480 on displays much larger. With the Retina Display Apple shifted the focus of attention on a smartphone display to resolution, specifically to a resolution threshold of about 300 ppi on a smartphone that's used at a distance of about 12 inches.</p>
+<p>Here is a list of Google phones (date introduced, name, display size, pixel format, resolution):</p>
+<ul>
+<li>Sep. 2008: G1, 3.2 inch, 480x320, 180 ppi</li>
+<li>Jan. 2010: Nexus One, 3.7 inch, 800x480, 252 ppi</li>
+<li>Dec. 2010: Nexus S, 4.0 inch, 800x480, 233 ppi</li>
+<li>Nov. 2011: Galaxy Nexus, 4.65 inch, 1280x720, 316 ppi</li><br />
+</ul></p>
+<p>If displays size were kept at 3.2 inches from the G1, the corresponding resolutions (ppi) would be:</p>
+<ul>
+<li>G1: 180.23</li>
+<li>Nexus One: 291.55</li>
+<li>Nexus S: 233.24</li>
+<li>Galaxy Nexus: 458.94</li><br />
+</ul></p>
+<p>On the G1 the baseline MDPI (~160 ppi) would have fit quite well. With HDPI (~240 ppi) the Nexus One would have had smallish UI elements. The Nexus S would have been a very good fit for HDPI (~240 ppi). The UI elements on the Galaxy Nexus on the hand, even with XHDPI, would have been microscopic.</p>
+<p>Android OEMs and Google responded to the 3.5-inch 960x640 Retina display by improving the pixel format to 1280x720. But because Android renders text and graphics like desktop OSes (e.g. Windows, OS X) increasing resolution above 320 ppi means smaller UI elements. The display <em>had</em> to grow in size to compensate for shrinking UI elements. iOS renders the Retina display not by shrinking UI elements by one fourth but by doubling clarity and sharpness. Unless Google adds an additional "DPI level" beyond XHDPI, Android smartphones that <del datetime="2012-01-18T05:26:52+00:00">match or</del> beat the iPhone 4/4S in resolution will always be bigger, much bigger.</p>
+<p><em>Update:</em> Jeremy E. wrote in:</p>
+<blockquote><p>It is also very possible for Android to support the iPhone 4's retina display metrics because it supports 320ppi.</blockquote></p>
+<p>He has a point. UI elements on a theoretical 3.5-inch 960x640 Android smartphone using XHDPI would only be slightly smaller compared to a 3.5-inch 960x640 iPhone. I guess what I was trying to answer was: Would a 1440x960 iPhone be a bigger phone? My guess is no. Apple would improve clarity by 50% and not increase display size. Another way of saying it is Apple would add a 3x baseline ppi so displays need not get larger to compensate for shrinking UI elements. (Just a guess at what Apple might do in that situation. In all likelihood 1440x960 will probably not exist on an iPhone, but we all know no one really knows what Apple might do.) Then why are 1280x720 Android smartphones much bigger? Because UI elements would get too small if they were much smaller than 4.5 inches.</p>
+<p>The bottom line is there is a difference between how Apple improves the visual experience on the iPhone and how Android smartphone OEMs do it. Apple has improved display quality on the iPhone while keeping it the same size while Android smartphone OEMs have competed with Apple by moving to 1280x720 and much bigger displays. <a href="http://daringfireball.net/2012/01/why_are_android_phones_bigger">John Gruber offers a different theory as to why Android smartphones are bigger than the iPhone</a>.</p>

@@ -1,0 +1,31 @@
+---
+layout: post
+status: publish
+published: true
+title: MacBook Air Display Problem
+author:
+  display_name: ''
+  login: ''
+  email: ''
+  url: ''
+wordpress_id: 18257
+wordpress_url: http://www.displayblog.com/?p=18257
+date: '2011-02-28 15:37:48 -0800'
+date_gmt: '2011-02-28 23:37:48 -0800'
+categories: []
+tags: []
+comments: []
+---
+<p>Some of the newly-introduced MacBook Airs are having display problems:  weird colors, vertical lines, and external display connections not working.</p>
+<p>User <a href="http://discussions.apple.com/message.jspa?messageID=12497599#12497599">DanRyb</a>:</p>
+<blockquote><p>I ordered a MacBook Air 11" with 1.6 GHz, 4GB ram and 128GB SSD. Every so often while using it, the screen has a ton of weird colors in vertical lines (extends the whole display) and the entire laptop has frozen. I have to force it off with the power button and reboot it. It happens at random times. Is this a symptom of overheating perhaps? I've done some research online and can't seem to find anyone else experiencing the same issue so I'm thinking I got a bad apple.</blockquote></p>
+<p>The problem of vertical lines seem to be affecting the entire screen. Normally if only a portion of the screen is exhibiting discolored vertical lines the likely cause is a faulty driver IC or a loose connection to the LCD panel. Since the entire screen is affected, the cause <em>might</em> be a defective TCON (timing controller) or loose wiring between the LCD panel and the main board.</p>
+<p>User <a href="http://discussions.apple.com/message.jspa?messageID=13132625#13132625">Ibaum</a>:</p>
+<blockquote><p>Ultimately this leads me to the following conclusion: it appears to be a general problem with all new Macbook Airs that the external video signal is pretty bad. Some monitors seem to be more "forgiving" and don't show any problems (in my tests, Samsung, Apple, and NEC worked pretty okay). If you have one of those, lucky you!</p>
+<p>Other monitors (in my tests particularly Eizo and Fujitsu) seem to be less forgiving and show intensive flickering. If you have one of those, bad luck! (Unfortunately, at my workplace we only have Eizos). A replacement Macbook Air will most likely not solve the issue for you!</blockquote></p>
+<p>A logic board replacement by AppleCare didn't fix it. Also since brands like Samsung have many models all with different LCD panels, chips, connections, etc. your mileage will vary with these 'safe' brands. If the external monitor problem is somehow related to the first problem, could it be the GPU.</p>
+<p>User <a href="http://discussions.apple.com/message.jspa?messageID=13138984#13138984">schallau</a>:</p>
+<blockquote><p>Tried it with two HP ZR24w monitors using both DisplayPort and VGA cables. Both monitors and both input types exhibited issues. With display port the screen would randomly blank out or half of the screen would flicker. With VGA I would experience artifacts like ghosting of images after a few minutes. This behavior is consistent at any resolution above 1600x1200 (the monitor's native resolution is 1920x1200).</blockquote></p>
+<p>Higher pixel formats require more bandwidth, which generate more heat. The culprit might be heat but Apple's engineers would have built into the MacBook Airs some sort of tolerance up to about 100&deg;C. I don't think there are any solutions out there, but in the mean time, and if you haven't already, make sure to download and patch your MacBook Airs. The <a href="http://support.apple.com/kb/DL1337">MacBook Air EFI Firmware Update 2.0</a> is one in particular that should help some of you with display problems:</p>
+<blockquote><p>This update resolves a rare issue where MacBook Air boots or wakes to a black screen or becomes unresponsive.  This update is recommended for all 11-inch and 13-inch MacBook Air (late 2010) models.</blockquote></p>
+<p><a href="http://www.cultofmac.com/another-fix-for-flickering-macbook-air-external-displays-how-to/75593">David Martin</a> at Cult of Mac offers a potential fix by resetting the internal hardware in the MacBook Air. These ultra-thin notebook PCs from Apple are engineering marvels, but for some there seems to be display-related problems that requires Apple's attention.</p>
