@@ -17,3 +17,18 @@ title: 'DISPLAYBLOG Has Moved From WordPress to Jekyll'
 
 <strong>PERMALINKS</strong>
 <p>All permanent hyperlinks unfortunately will be severed. This will have a worldwide impact on any site that has referenced any of the 7000+ articles on DISPLAYBLOG. Apologies to everyone for all those broken links! If anyone knows how to restore WordPress-style permalinks on Jekyll please get in contact with me (jin@displayblog.com). I'll have to go through hundreds of articles to fix hyperlinks that reference other articles on DISPLAYBLOG.
+
+<em>Update 2016.12.12</em>
+<p>I think I've figured out how to restore permalinks I used while on WordPress. The trick was to modify the _config.yml file in the root directory of my Jekyll site. All I had to do was add:</p>
+
+<code>permalink: /:year/:month/:day/:title</code>
+
+<p>This way permalink references no longer reference:</p>
+
+<code>/YYYY/MM/DD/Blog-Post-Title.html</code>
+
+<p>Instead with the _config.yml modification, permalink is referenced without the .html at the end:</p>
+
+<code>/YYYY/MM/DD/Blog-Post-Title/</code>
+
+<p>This should restore all worldwide permalink references to DISPLAYBLOG articles since 2006. Phew.</p>
