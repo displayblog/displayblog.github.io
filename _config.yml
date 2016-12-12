@@ -2,6 +2,7 @@
 
 title: DISPLAYBLOG
 baseurl: "" # name of the repository
+permalink: /:year/:month/:day/:title/
 
 highlighter: rouge
 markdown: kramdown
